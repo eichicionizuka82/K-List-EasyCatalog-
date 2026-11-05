@@ -1,3 +1,14 @@
+<img width="1080" height="2400" alt="10" src="https://github.com/user-attachments/assets/b235f224-cfc4-4c86-bf22-0597b3fbdb9b" />
+<img width="1080" height="2400" alt="9" src="https://github.com/user-attachments/assets/09a62870-0108-4f38-8b26-e7bc8fab8494" />
+<img width="1080" height="2400" alt="8" src="https://github.com/user-attachments/assets/e7f6ff80-2e5c-40d5-bbc3-6a02d3213bf3" />
+<img width="1080" height="2400" alt="7" src="https://github.com/user-attachments/assets/66733530-6fdc-4ac0-8ac9-3472f804cecb" />
+<img width="1080" height="2400" alt="6" src="https://github.com/user-attachments/assets/6ce16391-68c7-42cf-be00-1dd4bc0751d8" />
+<img width="1080" height="2400" alt="5" src="https://github.com/user-attachments/assets/b5582dfd-fb7e-47a5-94b6-fdf090aa574c" />
+<img width="1080" height="2400" alt="4" src="https://github.com/user-attachments/assets/f1c50e36-ed26-451a-8e6f-b402a87634b3" />
+<img width="1080" height="2400" alt="3" src="https://github.com/user-attachments/assets/2d33ce79-9b8a-4bc8-9bd1-726c698bc6dc" />
+<img width="1080" height="2400" alt="2" src="https://github.com/user-attachments/assets/4b948cb9-7222-42cd-babf-d88f6f1f3d49" />
+<img width="1080" height="2400" alt="1" src="https://github.com/user-attachments/assets/8792f8e2-1f66-4120-b1d9-6116957138b0" />
+<img width="1080" height="2400" alt="0" src="https://github.com/user-attachments/assets/6f2faed7-d98c-4584-9b5d-698a99c3c9bd" />
 # K-List-EasyCatalog-
 ### What is K•List?
 
