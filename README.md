@@ -1,77 +1,92 @@
-<img width="1080" height="2400" alt="10" src="https://github.com/user-attachments/assets/b235f224-cfc4-4c86-bf22-0597b3fbdb9b" />
-<img width="1080" height="2400" alt="9" src="https://github.com/user-attachments/assets/09a62870-0108-4f38-8b26-e7bc8fab8494" />
-<img width="1080" height="2400" alt="8" src="https://github.com/user-attachments/assets/e7f6ff80-2e5c-40d5-bbc3-6a02d3213bf3" />
-<img width="1080" height="2400" alt="7" src="https://github.com/user-attachments/assets/66733530-6fdc-4ac0-8ac9-3472f804cecb" />
-<img width="1080" height="2400" alt="6" src="https://github.com/user-attachments/assets/6ce16391-68c7-42cf-be00-1dd4bc0751d8" />
-<img width="1080" height="2400" alt="5" src="https://github.com/user-attachments/assets/b5582dfd-fb7e-47a5-94b6-fdf090aa574c" />
-<img width="1080" height="2400" alt="4" src="https://github.com/user-attachments/assets/f1c50e36-ed26-451a-8e6f-b402a87634b3" />
-<img width="1080" height="2400" alt="3" src="https://github.com/user-attachments/assets/2d33ce79-9b8a-4bc8-9bd1-726c698bc6dc" />
-<img width="1080" height="2400" alt="2" src="https://github.com/user-attachments/assets/4b948cb9-7222-42cd-babf-d88f6f1f3d49" />
-<img width="1080" height="2400" alt="1" src="https://github.com/user-attachments/assets/8792f8e2-1f66-4120-b1d9-6116957138b0" />
-<img width="1080" height="2400" alt="0" src="https://github.com/user-attachments/assets/6f2faed7-d98c-4584-9b5d-698a99c3c9bd" />
-# K-List-EasyCatalog-
-### What is K•List?
+# K-LIST® — an easy catalog
 
-**K•List** is a simple, fast and minimal app to catalog your series and movies. No bloat, no ads, just your list.
+A minimal, offline-first catalog for the series and movies you watch. It started as a personal tool for Korean dramas, but it works for any series and movie.
 
-Built with personal API keys integration: **TMDB, MDBList and Pictorium** for metadata, posters, ratings and fanart.
+No account, no ads, no tracking. Your lists live only on your device.
 
-### Features
+**Download the Android app (APK):** [k-list.apk](https://github.com/eichicionizuka82/K-List-EasyCatalog-/releases/latest/download/k-list.apk)
 
-- 📚 Personal watchlist / watched / favorites
-- 🎬 Detail page with cast, trailer, episodes, suggested titles
-- 🔍 Search powered by TMDB
-- ⭐ Ratings from TMDB + MDBList
-- 🖼️ High-quality posters via Pictorium
-- 🎨 Clean dark UI - inspired by modern streaming apps
+## Features
 
-### External Search Integration
+**Your lists**
+- Series: Completed, Watching, Priority, On hold, To watch, Dropped, Undecided. Movies: Completed, Priority, To watch, Undecided. A title sits in one list at a time.
+- Episode and season progress for series, with a progress bar and quick +/- buttons.
+- Personal rating, date added and private notes for every title.
+- Multiple profiles (up to 4), each with its own lists, ratings and theme.
+- Grid or list view, sorting (recent, A–Z, year, rating, your rating), and a status icon on every poster you already have in a list.
+- Statistics: total time and episodes watched.
 
-K•List does **NOT** host, provide or link to any video streams.
+**Title pages**
+- Ratings from TMDB, IMDb (via MDBList) or MyDramaList, with more scores from other services.
+- Cast, crew, trailers, genres, networks and studios, collections, suggestions and reviews.
+- Tap an actor, creator, network, studio or genre to see their other titles.
+- "Available on": streaming platforms from TMDB (data provided by JustWatch).
+- "Search": opens the title's search directly in **CloudStream** or **Nuvio**, if you have them installed.
+- "Download subtitles": SubSource and Wyzie Subs (with optional translation).
+- Poster and landscape customization.
 
-The app can optionally send the selected title as a search query to external apps already installed on your device, such as **CloudStream** and **Nuvio**, via standard Android Intents.
+**Browse and discover**
+- Ready-made TMDB lists (latest, popular, top rated, upcoming) and your own MDBList lists, with a filter for Korean titles only.
+- Explore page, search with filters, and people search.
 
-> Example: `ACTION_SEARCH -> query: "A Killer Paradox"`
-> The user is fully responsible for the external apps they have installed and how they use them.
+**Other**
+- 7 languages: English, Italian, Spanish, French, German, Portuguese, Hindi.
+- Themes and custom colors.
+- Backup and restore as a JSON file.
+- Works offline once installed. Your data never leaves the device, apart from the requests you make to the services below.
 
-You can add, remove or customize external search providers from Settings.
+## Install
 
-### Setup
+**Android (APK):** download [k-list.apk](https://github.com/eichicionizuka82/K-List-EasyCatalog-/releases/latest/download/k-list.apk) and open it. Android may ask you to allow installs from your browser or file manager. To update, use Settings › Check for updates inside the app.
 
-1. Clone the repo
-```bash
-git clone https://github.com/yourusername/K-List.git
-```
-2. Open in Android Studio
-3. Add your own API keys in Settings > API Keys inside the app:
-   - TMDB API Key (https://www.themoviedb.org/settings/api)
-   - MDBList API Key (https://mdblist.com/)
-   - Pictorium API Key
-4. Build & run
+**As a web app (PWA):** open the app's page in Chrome or Brave, then choose "Install".
 
-No keys are hardcoded. An `env.example` is provided for reference.
+## Setup
 
-### Tech Stack
+The app needs your own keys for the services it talks to. They are stored on your device and are included in your backup.
 
-- Kotlin / Jetpack Compose
-- TMDB API, MDBList API, Pictorium
-- MVVM + Clean Architecture
+| Service | Needed? | Used for | Where to set it |
+|---|---|---|---|
+| **TMDB** API key | **Required** | Search, posters, details, cast, trailers, TMDB ratings and lists | Settings › Integrations |
+| **MDBList** API key | Optional | Custom lists, IMDb rating and other scores | Settings › Integrations |
+| **MyDramaList** instance | Optional | Rating, age rating, crew and cast for Korean titles | Settings › Integrations › MyDramaList |
+| **SubSource** API key | Optional | Subtitle downloads | Settings › Integrations |
+| **Wyzie Subs** API key | Optional | Subtitle downloads and translation | Settings › Integrations |
+| **Pictorium** | Optional | Custom posters | Settings › Integrations |
 
-### Credits & Attribution
+Get a free TMDB key at [themoviedb.org](https://www.themoviedb.org/settings/api). MDBList, SubSource and Wyzie offer free keys too.
 
-This product uses the TMDB API but is not endorsed or certified by TMDB.
-All movie and TV show metadata, posters and images are provided by TMDB, MDBList and Pictorium.
+### MyDramaList (self-hosted)
 
-Logo: K• - film strip concept by K•List
+MyDramaList has no official API. K-LIST reads it through [Kuryana](https://github.com/tbdsux/kuryana), an unofficial open-source service, so you run your own copy for free:
 
-### Disclaimer
+1. Create a free GitHub account.
+2. Open [github.com/tbdsux/kuryana](https://github.com/tbdsux/kuryana) and choose **Fork › Create fork**.
+3. Go to [vercel.com](https://vercel.com) and sign in with your GitHub account.
+4. **Add New › Project**, pick your fork from the list (do not paste the address) and press **Deploy**.
+5. Copy the address Vercel gives you, for example `https://kuryana-xxx.vercel.app` (no trailing `/`).
+6. In the app: Settings › Integrations › MyDramaList, turn it on, paste the address, tap **Test connection** and **Save**.
+7. To keep it updated, open your fork on GitHub and use **Sync fork › Update branch**. Vercel rebuilds it automatically.
 
-K•List is a personal cataloging tool. It does not host, store or distribute copyrighted content. All external search integrations are user-configured and rely on third-party apps installed separately. Please respect copyright laws in your country.
+Without an address, MyDramaList stays off and the app uses TMDB. The data is unofficial, so some titles may be missing or differ.
 
-### License
+## Privacy
 
-MIT License - see LICENSE file.
+- No account, no analytics, no ads.
+- Lists, ratings and notes are stored locally on your device. Use the backup to move them elsewhere.
+- The app contacts only the services you set up (TMDB, MDBList, your MyDramaList instance, SubSource, Wyzie, Pictorium), using your own keys.
 
----
+## Notes
 
-Made with ❤️ for movie lovers.
+- K-LIST does not host, stream or provide any video content. The CloudStream and Nuvio buttons only pass a title to those apps, which you install and use separately.
+- Subtitles are provided by SubSource and Wyzie Subs. Check the terms of those services.
+
+## Build and run
+
+The whole app is a single file, `index.html` (vanilla JavaScript, data in IndexedDB). To run it, serve the folder with any static web server, for example `python3 -m http.server`, and open it in a browser. The Android APK is the same file wrapped in a WebView app.
+
+## Credits
+
+Created by Aisaka82, powered by Claude AI.
+
+This product uses the TMDB API but is not endorsed or certified by TMDB. Streaming availability data is provided by JustWatch. Ratings and lists may come from IMDb, MDBList and MyDramaList, which are trademarks of their respective owners; K-LIST is not affiliated with any of them.
