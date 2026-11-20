@@ -30,7 +30,7 @@ No account, no ads, no tracking. Your lists live only on your device.
 - Explore page, search with filters, and people search.
 
 **Other**
-- 7 languages: English, Italian, Spanish, French, German, Portuguese, Hindi.
+- 12 languages: English, Italian, Spanish, French, German, Portuguese, Hindi, Korean, Indonesian, Turkish, Russian and Japanese
 - Themes and custom colors.
 - Backup and restore as a JSON file.
 - Works offline once installed. Your data never leaves the device, apart from the requests you make to the services below.
